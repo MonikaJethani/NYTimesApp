@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:text="@string/search"
+        android:textSize="@dimen/titles_text_size" />
+
+    <Button
+        android:id="@+id/gotoSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:drawableRight="@drawable/ic_chevron_right"
+        android:text="@string/search_articles"
+        android:textSize="@dimen/buttons_text_size"
+        android:onClick="doSearch"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:text="@string/popular"
+        android:textSize="@dimen/titles_text_size" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:drawableRight="@drawable/ic_chevron_right"
+        android:text="@string/most_viewed"
+        android:textSize="@dimen/buttons_text_size"
+        android:onClick="getMostViewed"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:drawableRight="@drawable/ic_chevron_right"
+        android:text="@string/most_shared"
+        android:textSize="@dimen/buttons_text_size"
+        android:onClick="getMostShared"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:drawableRight="@drawable/ic_chevron_right"
+        android:text="@string/most_emailed"
+        android:textSize="@dimen/buttons_text_size"
+        android:onClick="getMostEmailed"/>
+
+</LinearLayout>
